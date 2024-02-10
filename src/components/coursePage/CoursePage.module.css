@@ -1,5 +1,59 @@
 .main {
+  margin: 1% 30%;
+}
+
+.ulist {
+  overflow-y: scroll;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Courier New", monospace;
+  height: max-content;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.list:last-child {
+  border-bottom: none;
+}
+.list:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.detailbutton {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.progress {
+  width: 100%;
+}
+
+.input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.name {
+  font-family: "Lucida Console", "Courier New", monospace;
 }

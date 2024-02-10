@@ -1,15 +1,46 @@
 .button {
-  color: black;
+  color: black !important;
   cursor: pointer;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 25px !important;
   border: none;
-  padding: 0.5rem;
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: large;
+  padding: 0.5rem !important;
 }
 
 .button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+}
+
+.detailbutton {
+  color: black !important;
+  border-radius: 25px !important;
+  margin-top: 1rem !important;
+}
+
+.detailbutton:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+}
+
+.enrollbutton {
+  color: black !important;
+  border-radius: 25px !important;
+  margin-top: 1rem !important;
+}
+
+.enrollbutton:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+}
+
+.unrollbutton {
+  color: black !important;
+  border-radius: 25px !important;
+  margin-top: 1rem !important;
+}
+
+.unrollbutton:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 25px;
 }

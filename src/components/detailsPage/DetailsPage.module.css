@@ -1,0 +1,34 @@
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+
+.dashboardbutton {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10%;
+}
+
+.progress {
+  width: 100%;
+}
+
+.list1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.accordion {
+  margin: 30% 30% 0% 30% !important;
+  margin-top: 4rem !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 25px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
