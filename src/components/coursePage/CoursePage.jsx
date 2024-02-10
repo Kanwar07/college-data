@@ -84,6 +84,7 @@ function CoursePage() {
                     >
                       <div>{item.title}</div>
                       <div>{item.category}</div>
+                      <div>{item.rating}</div>
                     </li>
                   ))
               : itemdata.map((item) => (
@@ -94,6 +95,7 @@ function CoursePage() {
                   >
                     <div>{item.title}</div>
                     <div>{item.category}</div>
+                    <div>{item.rating}</div>
                   </li>
                 ))}
           </ul>

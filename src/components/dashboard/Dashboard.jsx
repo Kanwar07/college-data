@@ -41,7 +41,6 @@ function Dashboard() {
     price,
     discountPercentage,
     rating,
-    stock,
     brand,
     category,
     thumbnail,
@@ -114,12 +113,6 @@ function Dashboard() {
                     Rating :{" "}
                   </span>
                   {rating}
-                </div>
-                <div>
-                  <span style={{ fontSize: "large", fontFamily: "monospace" }}>
-                    Stock :{" "}
-                  </span>
-                  {stock}
                 </div>
                 <div>
                   <span style={{ fontSize: "large", fontFamily: "monospace" }}>

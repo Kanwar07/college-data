@@ -18,7 +18,6 @@ function DetailsPage() {
     price,
     discountPercentage,
     rating,
-    stock,
     brand,
     category,
     thumbnail,
@@ -73,12 +72,6 @@ function DetailsPage() {
                     Rating :{" "}
                   </span>
                   {rating}
-                </div>
-                <div>
-                  <span style={{ fontSize: "large", fontFamily: "monospace" }}>
-                    Stock :{" "}
-                  </span>
-                  {stock}
                 </div>
                 <div>
                   <span style={{ fontSize: "large", fontFamily: "monospace" }}>
