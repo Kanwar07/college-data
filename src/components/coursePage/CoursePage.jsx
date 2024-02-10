@@ -1,9 +1,8 @@
-import React, { useContext, useMemo } from "react";
+import React, { useContext } from "react";
 import coursepagestyle from "./CoursePage.module.css";
 import { AllData } from "../context/Context";
 import DetailsButton from "../button/DetailsButton.jsx";
 import { Link } from "react-router-dom";
-import debounce from "lodash.debounce";
 import { Stack } from "@mui/material";
 
 function CoursePage() {
@@ -17,10 +16,6 @@ function CoursePage() {
   const getsearchdata = (e) => {
     setsearchlist(e.target.value);
   };
-
-  const debouncedResults = useMemo(() => {
-    return debounce(getsearchdata, 2000);
-  }, []);
 
   return (
     <>
@@ -57,10 +52,11 @@ function CoursePage() {
         <div className={coursepagestyle.input}>
           <input
             type="text"
-            onChange={debouncedResults}
+            value={searchlist}
+            onChange={getsearchdata}
             placeholder="Enter your desired course"
             style={{
-              padding: "2rem 1rem",
+              padding: "1.5rem 1rem",
               borderRadius: "25px",
               backgroundColor: "transparent",
               border: "none",
