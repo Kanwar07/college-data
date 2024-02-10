@@ -28,7 +28,7 @@ function Dashboard() {
         }
       });
     } else {
-      alert("Item is already enrolled select a different item");
+      alert("Item is already ordered select a different item");
       navigate("/");
     }
     setselectedlist("");
