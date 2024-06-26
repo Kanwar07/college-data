@@ -20,6 +20,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0rem 10rem;
+}
+
+.list2 {
+  margin: 0rem 6rem;
 }
 
 .accordion {

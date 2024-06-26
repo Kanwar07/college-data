@@ -42,7 +42,7 @@ function DetailsPage() {
               className={detailspagestyle.list1}
               style={{ margin: "0% 10%" }}
             >
-              <div>
+              <div className={detailspagestyle.list2}>
                 <div>
                   <span style={{ fontSize: "large", fontFamily: "monospace" }}>
                     Title :{" "}
@@ -99,7 +99,11 @@ function DetailsPage() {
                       key={image}
                       src={image}
                       alt={image}
-                      style={{ padding: "1rem" }}
+                      style={{
+                        padding: "1rem",
+                        width: "500px",
+                        height: "500px",
+                      }}
                     />
                   );
                 })}

@@ -7,9 +7,11 @@ import SchoolIcon from "@mui/icons-material/School";
 function NavBar() {
   return (
     <nav className={navbarstyle.navbar}>
-      <div style={{ display: "flex", alignItems: "flex-end" }}>
-        {<SchoolIcon fontSize="large" style={{ marginRight: "5px" }} />}The
-        DataBase
+      <div
+        style={{ display: "flex", alignItems: "flex-end", cursor: "pointer" }}
+      >
+        {<SchoolIcon fontSize="large" style={{ marginRight: "5px" }} />}
+        The DataBase
       </div>
       <Link to="/">{<ProductButton />}</Link>
     </nav>

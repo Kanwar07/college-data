@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import coursepagestyle from "./CoursePage.module.css";
+import productpagestyle from "./ProductPage.module.css";
 import { AllData } from "../context/Context";
 import DetailsButton from "../button/DetailsButton.jsx";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 
-function CoursePage() {
+function ProductPage() {
   const { itemdata, selectedlist, setselectedlist, searchlist, setsearchlist } =
     useContext(AllData);
 
@@ -22,7 +22,7 @@ function CoursePage() {
       <div>
         {selectedlist.length !== 0 ? (
           <progress
-            className={coursepagestyle.progress}
+            className={productpagestyle.progress}
             id="file"
             max="100"
             value="25"
@@ -31,7 +31,7 @@ function CoursePage() {
           </progress>
         ) : (
           <progress
-            className={coursepagestyle.progress}
+            className={productpagestyle.progress}
             id="file"
             max="100"
             value="0"
@@ -49,7 +49,7 @@ function CoursePage() {
         >
           Select your Desired Product
         </h1>
-        <div className={coursepagestyle.input}>
+        <div className={productpagestyle.input}>
           <input
             type="text"
             value={searchlist}
@@ -65,8 +65,8 @@ function CoursePage() {
             }}
           />
         </div>
-        <div className={coursepagestyle.main}>
-          <ul className={coursepagestyle.ulist}>
+        <div className={productpagestyle.main}>
+          <ul className={productpagestyle.ulist}>
             {searchlist
               ? itemdata
                   .filter((list) =>
@@ -75,7 +75,7 @@ function CoursePage() {
                   .map((item) => (
                     <li
                       key={item.id}
-                      className={coursepagestyle.list}
+                      className={productpagestyle.list}
                       onClick={() => handleClick(item)}
                     >
                       <div>{item.title}</div>
@@ -86,7 +86,7 @@ function CoursePage() {
               : itemdata.map((item) => (
                   <li
                     key={item.id}
-                    className={coursepagestyle.list}
+                    className={productpagestyle.list}
                     onClick={() => handleClick(item)}
                   >
                     <div>{item.title}</div>
@@ -101,10 +101,10 @@ function CoursePage() {
             <Stack
               spacing={2}
               direction="row"
-              className={coursepagestyle.stack}
+              className={productpagestyle.stack}
             >
-              <div className={coursepagestyle.name}>{selectedlist.title}</div>
-              <Link to="/details" className={coursepagestyle.detailbutton}>
+              <div className={productpagestyle.name}>{selectedlist.title}</div>
+              <Link to="/details" className={productpagestyle.detailbutton}>
                 {<DetailsButton />}
               </Link>
             </Stack>
@@ -115,4 +115,4 @@ function CoursePage() {
   );
 }
 
-export default CoursePage;
+export default ProductPage;

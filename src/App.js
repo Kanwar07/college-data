@@ -1,4 +1,4 @@
-import CoursePage from "./components/coursePage/CoursePage";
+import ProductPage from "./components/productPage/ProductPage";
 import Dashboard from "./components/dashboard/Dashboard";
 import DetailsPage from "./components/detailsPage/DetailsPage";
 import { Routes, Route } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
       <Context>
         <NavBar />
         <Routes>
-          <Route path="/" element={<CoursePage />} />
+          <Route path="/" element={<ProductPage />} />
           <Route path="/details" element={<DetailsPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>

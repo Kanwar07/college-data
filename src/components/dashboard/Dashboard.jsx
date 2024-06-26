@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { AllData } from "../context/Context";
 import dashboardstyle from "./Dashboard.module.css";
 import { Link } from "react-router-dom";
-import EnrollButton from "../button/EnrollButton";
+import BuyButton from "../button/BuyButton";
 import { Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +13,7 @@ function Dashboard() {
 
   const navigate = useNavigate();
 
-  const handleenroll = () => {
+  const handleaddproduct = () => {
     const isAlreadyEnrolled = itemlist.some(
       (item) => item.id === selectedlist.id
     );
@@ -129,9 +129,9 @@ function Dashboard() {
               </div>
               <img src={thumbnail} alt={thumbnail} />
             </Stack>
-            <div onClick={handleenroll}>
+            <div onClick={handleaddproduct}>
               <Link to="/dashboard" className={dashboardstyle.enrollbutton}>
-                <EnrollButton />
+                <BuyButton />
               </Link>
             </div>
           </div>
